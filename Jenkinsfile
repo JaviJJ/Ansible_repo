@@ -6,13 +6,6 @@ pipeline{
     }
 	agent any
       stages{
-           stage('Checkout'){
-	    
-               steps{
-		 echo 'cloning'
-                 git 'https://github.com/Sonal0409/DevOpsClassCodes.git'
-              }
-          }
           stage('Compile'){
              
               steps{
@@ -20,29 +13,13 @@ pipeline{
                   sh 'mvn compile'
 	      }
           }
-          stage('CodeReview'){
-		  
-              steps{
-		    
-		  echo 'codeReview'
-                  sh 'mvn pmd:pmd'
-              }
-          }
-           stage('UnitTest'){
+          stage('Testing'){
 		  
               steps{
 	         
                   sh 'mvn test'
               }
           
-          }
-        
-          stage('Package'){
-		  
-              steps{
-		  
-                  sh 'mvn package'
-              }
           }
 	     
           
