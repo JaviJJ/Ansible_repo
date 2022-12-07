@@ -3,16 +3,17 @@ pipeline{
     tools{
        maven 'mymaven'
     }
+	agent any
       stages{
           stage('Compile'){
-		  agent{name 'LinuxNode1'}
+		  agent{label 'linux_agent1'}
               steps{
                   echo 'complie the code..'
                   sh 'mvn compile'
 	      }
           }
           stage('Testing'){
-	      agent{name 'LinuxNode2'}  
+	      agent{label 'linux_agent2'}  
               steps{
 	          echo 'test the code..'
                   sh 'mvn test'
