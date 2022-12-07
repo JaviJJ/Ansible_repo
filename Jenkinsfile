@@ -3,6 +3,7 @@ pipeline{
     tools{
        maven 'mymaven'
     }
+	agent none
       stages{
           stage('Compile'){
 		  agent{label 'linux_agent1'}
