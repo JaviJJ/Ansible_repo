@@ -1,0 +1,8 @@
+- name: "HolaMundo en Ansible"
+  become: true
+  hosts: ApacheServer
+  tasks:
+
+    - name: "Create a file"
+      shell:  "pwd >> file_created.dat"
+      register: "output"
