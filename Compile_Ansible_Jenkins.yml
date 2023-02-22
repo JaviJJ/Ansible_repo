@@ -4,7 +4,7 @@
   vars:
           code_dir: "/home/ec2-user/git/DevOpsCodeDemo2"
   tasks:
-          - name: "install maven"
+          - name: "sudo install maven"
             yum:
                   name: maven
           - name: "Copying the code"
