@@ -2,7 +2,7 @@
   hosts: TomcatAngel
   become: true
   vars:
-          gitdir: "/home/ec2-user/git/ProjectDevOpsAngel"
+          gitdir: "/tmp/ProjectDevOpsAngel"
   tasks:
           - name: "Create a file"
             shell:  "uname -an >> /var/lib/tomcat9/webapps/Ansible_Jenkins_File.dat"
