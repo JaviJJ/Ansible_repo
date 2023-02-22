@@ -6,7 +6,7 @@
   tasks:
           - name: "install maven"
             sudo yum:
-                  name: sudo maven
+                  name: maven
           - name: "Copying the code"
             git:
                   repo: 'https://github.com/avaquer8/DevOpsCodeDemo2.git'
