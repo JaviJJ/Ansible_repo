@@ -4,9 +4,6 @@
   vars:
           gitdir: "/tmp/ProjectDevOpsAngel"
   tasks:
-          - name: "Create a file"
-            shell:  "uname -an >> /var/lib/tomcat9/webapps/Ansible_Jenkins_File.dat"
-            register: "output"
           - name: "Install Tomcat"
             apt:
                     name: tomcat9
