@@ -14,7 +14,7 @@
                   version:  "main"
                   accept_hostkey: yes
                   force: yes
-          - name: "Compiling"
+          - name: "Compiling and Packaging"
             command:
-                    chdir "{{ code_dir }}"
+                    chdir: "{{ code_dir }}"
                     cmd:  "mvn package"
