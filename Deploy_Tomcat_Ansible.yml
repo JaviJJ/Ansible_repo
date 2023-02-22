@@ -2,7 +2,7 @@
   hosts: TomcatServer 
   become: true
   vars:
-          gitdir: "/home/ec2-user/git/ProjectDevOpsAngel"
+          gitdir: "/tmp/BookzyBookShop"
   tasks:
           - name: "Install Tomcat"
             apt:
