@@ -11,7 +11,7 @@
             git:
                   repo: 'https://github.com/avaquer8/DevOpsCodeDemo2.git'
                   dest: "{{ code_dir }}"
-                  version:  "main"
+                  version:  "master"
                   accept_hostkey: yes
                   force: yes
           - name: "Compiling and Packaging"
