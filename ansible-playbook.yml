@@ -4,5 +4,5 @@
   tasks:
 
     - name: "Create a file"
-      shell:  "pwd >> file_created.dat"
+      shell:  "cat "Hola Mundo DevOps" >> file_created.dat"
       register: "output"
