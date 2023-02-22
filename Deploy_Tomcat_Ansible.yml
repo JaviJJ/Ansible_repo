@@ -1,0 +1,25 @@
+- name: "Install Tomcat  and deploy WAR"
+  hosts: ApacheServer 
+  become: true
+  vars:
+          gitdir: "/tmp/"
+  tasks:
+          - name: "Instalando Tomcat"
+            apt:
+                    name: tomcat9
+                    update_cache: yes
+            notify: "enable tomcat service"
+          - name: "deploy WAR file"
+            copy:
+                    src: "{{ gitdir }}/target/BookzyBookShop.war"
+                    dest: "/var/lib/tomcat9/webapps/BookzyBookShop.war"            
+  handlers:
+          - name: "enable tomcat service"
+            service:
+                    name: tomcat9
+                    state: started
+                    enabled: yes
+          - name: "restart tomcat service post deployment"
+            service:
+                    name: tomcat9
+                    state: restarted            
