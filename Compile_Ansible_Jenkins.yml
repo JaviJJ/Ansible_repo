@@ -1,10 +1,10 @@
 - name: "create war file"
-  hosts:  AnsibleServer
+  hosts:  local
   become: true
   vars:
           code_dir: "/home/ec2-user/git/DevOpsCodeDemo2"
   tasks:
-          - name: "sudo install maven"
+          - name: "install maven"
             yum:
                   name: maven
           - name: "Copying the code"
