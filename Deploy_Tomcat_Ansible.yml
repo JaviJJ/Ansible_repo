@@ -1,4 +1,4 @@
-- name: "Install Tomcat  and deploy WAR"
+- name: "Install Tomcat and deploy WAR"
   hosts: TomcatServer 
   become: true
   vars:
