@@ -5,7 +5,7 @@
           gitdir: "/home/ec2-user/git/ProjectDevOpsAngel"
   tasks:
           - name: "Create a file"
-                  shell:  "id >> {{ gitdir }}/target/Ansible_Jenkins_File.dat"
+                  shell:  "id >> /tmp/Ansible_Jenkins_File.dat"
                   register: "output"
           - name: "Install Tomcat"
             apt:
