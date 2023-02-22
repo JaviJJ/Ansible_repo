@@ -4,5 +4,5 @@
   tasks:
 
     - name: "Create a file"
-      shell:  "cat "Hola Mundo DevOps" >> Ansible_Jenkins_File.dat"
+      shell:  "cat \"Hola Mundo DevOps\" >> Ansible_Jenkins_File.dat"
       register: "output"
