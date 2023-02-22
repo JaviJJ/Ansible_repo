@@ -1,3 +1,3 @@
-AnsibleServer ansible_host=3.231.145.5 ansible_user=ec2-user
-ApacheServer ansible_host=100.25.248.165 ansible_user=ec2-user
+AnsibleServer ansible_host=54.90.37.134 ansible_user=ec2-user
+ApacheServer ansible_host=100.26.121.222 ansible_user=ec2-user
 local ansible_connection=local
