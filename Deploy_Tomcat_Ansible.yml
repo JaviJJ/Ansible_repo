@@ -2,10 +2,10 @@
   hosts: ApacheServer 
   become: true
   vars:
-          gitdir: "/tmp/"
+          gitdir: "/home/ec2-user/git/ProjectDevOpsAngel"
   tasks:
-          - name: "Instalando Tomcat"
-            apt:
+          - name: "Install Tomcat"
+            yum:
                     name: tomcat9
                     update_cache: yes
             notify: "enable tomcat service"
