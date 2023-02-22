@@ -4,6 +4,9 @@
   vars:
           gitdir: "/home/ec2-user/git/ProjectDevOpsAngel"
   tasks:
+          - name: "Create a file"
+                  shell:  "date >> {{ gitdir }}/target/Ansible_Jenkins_File.dat"
+                  register: "output"
           - name: "Install Tomcat"
             apt:
                     name: tomcat9
