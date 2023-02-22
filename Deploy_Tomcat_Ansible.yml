@@ -1,11 +1,11 @@
 - name: "Install Tomcat  and deploy WAR"
-  hosts: ApacheServer 
+  hosts: TomcatServer 
   become: true
   vars:
           gitdir: "/home/ec2-user/git/ProjectDevOpsAngel"
   tasks:
           - name: "Install Tomcat"
-            yum:
+            apt:
                     name: tomcat9
                     update_cache: yes
             notify: "enable tomcat service"
