@@ -2,7 +2,7 @@
   hosts: TomcatAngel
   become: true
   vars:
-          gitdir: "/tmp/ProjectDevOpsAngel"
+          gitdir: "/tmp/git/ProjectDevOpsAngel"
   tasks:
           - name: "Install Tomcat"
             apt:
