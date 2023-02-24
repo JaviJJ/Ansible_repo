@@ -1,5 +1,5 @@
 - name: "create war file"
-  hosts:  AnsibleServer
+  hosts:  Apache_Server_Ubuntu
   become: true
   vars:
           code_dir: "/tmp/git/Compiled_code"
