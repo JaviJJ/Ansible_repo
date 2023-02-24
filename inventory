@@ -1,4 +1,3 @@
-AnsibleServer ansible_host=54.90.37.134 ansible_user=ec2-user
-ApacheServer ansible_host=100.26.121.222 ansible_user=ec2-user
-TomcatAngel ansible_host=54.84.154.151 ansible_user=ubuntu
+Ansible_project ansible_host=54.234.101.183 ansible_user=ec2-user
+Apache_Server_Ubuntu ansible_host=100.25.182.185 ansible_user=ubuntu
 local ansible_connection=local
