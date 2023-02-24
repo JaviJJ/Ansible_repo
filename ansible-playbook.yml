@@ -1,6 +1,6 @@
 - name: "Prueba de Ansible"
   become: true
-  hosts: ApacheServer
+  hosts: Apache_Server_Linux
   tasks:
 
     - name: "Create a file"
