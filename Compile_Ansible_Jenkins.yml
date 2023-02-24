@@ -2,7 +2,7 @@
   hosts:  AnsibleServer
   become: true
   vars:
-          code_dir: "/tmp/git/ProjectDevOpsAngel"
+          code_dir: "/tmp/git/Compiled_code"
   tasks:
           - name: "install maven"
             yum:
