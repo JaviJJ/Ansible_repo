@@ -1,3 +1,4 @@
 Ansible_project ansible_host=54.234.101.183 ansible_user=ec2-user
 Apache_Server_Ubuntu ansible_host=100.25.182.185 ansible_user=ubuntu
+Apache_Server_Linux ansible_host=54.197.94.29 ansible_user=ubuntu
 local ansible_connection=local
