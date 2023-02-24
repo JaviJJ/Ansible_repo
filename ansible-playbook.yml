@@ -1,4 +1,4 @@
-- name: "HolaMundo en Ansible"
+- name: "Prueba de Ansible"
   become: true
   hosts: ApacheServer
   tasks:
