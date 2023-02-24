@@ -1,5 +1,5 @@
 - name: "Install Tomcat and deploy WAR"
-  hosts: TomcatAngel
+  hosts: Apache_Server_Ubuntu
   become: true
   vars:
           gitdir: "/tmp/git/ProjectDevOpsAngel"
